@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Statement</title>
+</head>
+<body>
+
+    <h1>mini satment</h1>
+    <table border=" 1rem">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Acc No</th>
+                <th>Diposit Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in datalist %} 
+            <tr>
+                <td>{{item.name}} </td>
+                <td>{{item.account_no}} </td>
+                <td>{{item.amount}} </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</html>
