@@ -1,0 +1,6 @@
+<!-- my_template.html -->
+<form method="post" action="{% url 'status' %}">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Diposit</button>
+</form>
