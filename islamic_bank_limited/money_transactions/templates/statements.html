@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Diposit Statement</title>
+</head>
+<body>
+
+    <h1>Diposit mini satment</h1>
+    <table border=" 1rem">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Acc No</th>
+                <th>Diposit Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for item in datalist %} 
+            <tr>
+                <td>{{item.name}} </td>
+                <td>{{item.account_no}} </td>
+                <td>{{item.amount}} </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+
+    </table>
+</body>
+</htm
